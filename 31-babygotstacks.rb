@@ -4,26 +4,24 @@
 # And you'd rather use a last-in-first-out datatype
 # http://www.rubeque.com/problems/baby-got-stacks
 
-class Stack
-  def initialize(stack)
-    @stack = stack
-  end
+def initialize(stack)
+  @stack = stack
+end
 
-  def pop(*idx)
-    result = @stack.pop(*idx)
-    return result.reverse if result.is_a? Array
+def pop(*elem)
+  result = @stack.pop(*elem)
+  if result.is_a? Array
+    result.reverse
+  else 
     result
-  end
-
-  def push(items)
-    @stack.push(*items) == @stack
-  end
-
-  def to_a
-    @stack
   end
 end
 
+def push(items)
+  @stack += items
+  return true
+end
+      
 stack = Stack.new([5, 6, 7, 8])
 
 assert_equal stack.pop, 8
