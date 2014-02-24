@@ -1,4 +1,0 @@
-# One of our favorite methods in Ruby 1.9 is each_with_object. It works much like inject. Use each_with_object to return an array containing one reversed string for each string that has an even number of characters. 
-# http://www.rubeque.com/problems/each-with-object
-
-
