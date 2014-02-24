@@ -23,4 +23,7 @@ class FibonacciTest < Minitest::Unit::TestCase
     assert_equal 12586269025, fibo_finder(50)
   end
 
+  def test_exercise
+    assert_equal 13, fibo_finder(7)
+  end
 end
