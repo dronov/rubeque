@@ -2,8 +2,6 @@ require_relative 'test_helper.rb'
 
 class ReverseTest < Minitest::Unit::TestCase
 
-  include Rack::Test::Methods
-
   def test_empty
     assert_equal "", reverse_each_word(" ")
   end

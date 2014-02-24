@@ -2,8 +2,6 @@ require_relative 'test_helper.rb'
 
 class FibonacciTest < Minitest::Unit::TestCase
   
-  include Rack::Test::Methods
-
   def test_is_zero
     assert_equal 0, fibo_finder(0)
   end

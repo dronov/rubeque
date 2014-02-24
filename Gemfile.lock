@@ -2,9 +2,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     minitest (5.2.3)
-    rack (1.5.2)
-    rack-test (0.6.2)
-      rack (>= 1.0)
     rake (10.1.1)
 
 PLATFORMS
@@ -12,5 +9,4 @@ PLATFORMS
 
 DEPENDENCIES
   minitest
-  rack-test
   rake
