@@ -4,5 +4,3 @@
 def reverse_each_word(sentence)
   sentence.split(" ").map(&:reverse).join(" ") 
 end
-
-assert_equal "olleH ,ereht dna woh era ?uoy", reverse_each_word("Hello there, and how are you?")
