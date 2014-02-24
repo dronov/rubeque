@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative '41-fibonacci'
+
 class FibonacciTest < Minitest::Unit::TestCase
 
   def test_is_zero
