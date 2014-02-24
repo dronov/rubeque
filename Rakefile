@@ -3,5 +3,5 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
 task :default do
-  ruby 41-fibonacci_test.rb
+  system("ruby 41-fibonacci_test.rb")
 end
